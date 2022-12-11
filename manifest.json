@@ -23,20 +23,20 @@
     },
     "background": {
         "scripts": [
-            "https://raw.githubusercontent.com/Wer0000/cheat-kogama/main/background.js"
+            "background.js"
         ]
     },
     "externally_connectable": {
         "matches": ["https://www.kogama.com/games/play/*"]
     },
-    "web_accessible_resources": ["https://raw.githubusercontent.com/Wer0000/cheat-kogama/main/cheat.js"],
+    "web_accessible_resources": ["cheat.js"],
     "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
     "content_scripts": [{
         "matches": [
             "https://www.kogama.com/games/play/*"
         ],
         "js": [
-            "https://raw.githubusercontent.com/Wer0000/cheat-kogama/main/content.js"
+            "content.js"
         ]
     }]
 }
