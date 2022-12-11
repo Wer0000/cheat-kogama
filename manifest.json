@@ -4,9 +4,9 @@
     "description": "Created By: Zpayer.",
     "manifest_version": 2,
     "icons": {
-"16":"./icons/icon16k.png",
-"48":"./icons/icon48k.png",
-"128":"./icons/icon128k.png"
+"16":"https://raw.githubusercontent.com/Wer0000/cheat-kogama/main/icons/icon16k.png",
+"48":"https://raw.githubusercontent.com/Wer0000/cheat-kogama/main/icons/icon48k.png",
+"128":"https://raw.githubusercontent.com/Wer0000/cheat-kogama/main/icons/icon128k.png"
 },
     "permissions": [
         "webRequest",
@@ -23,20 +23,20 @@
     },
     "background": {
         "scripts": [
-            "background.js"
+            "https://raw.githubusercontent.com/Wer0000/cheat-kogama/main/background.js"
         ]
     },
     "externally_connectable": {
         "matches": ["https://www.kogama.com/games/play/*"]
     },
-    "web_accessible_resources": ["cheat.js"],
+    "web_accessible_resources": ["https://raw.githubusercontent.com/Wer0000/cheat-kogama/main/cheat.js"],
     "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
     "content_scripts": [{
         "matches": [
             "https://www.kogama.com/games/play/*"
         ],
         "js": [
-            "content.js"
+            "https://raw.githubusercontent.com/Wer0000/cheat-kogama/main/content.js"
         ]
     }]
 }
